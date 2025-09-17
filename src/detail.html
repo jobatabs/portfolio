@@ -4,15 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="./style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="/main.ts"></script>
-  <title>Detail</title>
+  <title>Jonatan Noponen</title>
 </head>
 
 <body>
-  <p>This is detail</p>
-  <p><a href="/">Back</a></p>
+  <div id="page">
+    <turbo-frame id="header">
+      <header class="">
+        <h1 class="text-3xl font-bold font-sans underline">
+          <a href="/">jonatan noponen.</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a class="font-mono" href="/about">about</a></li>
+            <li><a class="font-mono" href="/contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </turbo-frame>
+    <turbo-frame id="overlay">
+      <div id="detail"
+        class="fixed top-0 right-0 bg-black/70 p-10 text-white w-300 min-h-screen h-full overflow-y-auto">
+        <h2>Project</h2>
+        <p>This is detail.<br />
+          What I call important is cheese.</p>
+        <p><a href="/">Back</a></p>
+      </div>
+    </turbo-frame>
+    <turbo-frame id="footer">
+      <footer>
+        <span class="font-mono">&copy; jonatan noponen 2025</span>
+      </footer>
+    </turbo-frame>
+  </div>
 </body>
 
 </html>

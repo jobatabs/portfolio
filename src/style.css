@@ -1,14 +1,16 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import "tailwindcss";
 
 @theme {
   --color-*: initial;
-  --color-white: #fff;
-  --color-purple: #3f3cbb;
-  --color-midnight: #121063;
-  --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca;
+  --color-white: #EFEFEF;
+  --color-purple: #9046CF;
+  --color-blue: #0072BB;
+  --color-red: #D72638;
+  --color-green: #058C42;
+  --color-black: #2D2D34;
 
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: Unna, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
