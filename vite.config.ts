@@ -8,6 +8,14 @@ export default defineConfig({
   ],
   build: {
     outDir: '../dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: 'src/index.html',
+        about: 'src/about.html',
+        contact: 'src/contact.html',
+        proj1: 'src/proj1.html'
+      }
+    }
   }
 })
