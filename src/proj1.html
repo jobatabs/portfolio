@@ -17,30 +17,22 @@
     <header>
       <nav class="m-10">
         <ul class="flex">
-          <li><h1 class="text-3xl left-0 font-bold font-sans underline"><a data-turbo-frame="content" href="/">jonatan&nbsp;noponen.</a></h1></li>
+          <li><h1 class="text-3xl left-0 font-bold font-sans underline"><a href="/">jonatan&nbsp;noponen.</a></h1></li>
           <li class="grow"><div id="spacer"></div></li>
-          <li><a class="block pt-3 pl-14 pr-10 font-mono hover:underline" data-turbo-frame="content" href="/about">about</a></li>
-          <li><a class="block pt-3 pl-10 pr-16 font-mono hover:underline" data-turbo-frame="content" href="/contact">contact</a></li>
+          <li><a class="block pt-3 pl-14 pr-10 font-mono hover:underline" href="/about">about</a></li>
+          <li><a class="block pt-3 pl-10 pr-16 font-mono hover:underline" href="/contact">contact</a></li>
         </ul>
       </nav>
     </header>
   </turbo-frame>
   <turbo-frame id="overlay">
-    <div id="overlay" class="hidden"></div>
-  </turbo-frame>
-  <turbo-frame id="content">
-    <div id="content" class="columns-2">
-      <div id="proj1">
-        <img src="img/proj1.jpg" />
-        <h2>Project</h2>
-        <p>Link to <a data-turbo-frame="overlay" href="/proj1">detail</a></p>
-      </div>
-      <div id="proj2">
-        <img src="img/proj2.jpg" />
-        <h2>Project</h2>
-        <p>Link to <a data-turbo-frame="overlay" href="/proj2">detail</a></p>
-      </div>
+    <div id="detail" class="fixed top-0 right-0 bg-black/70 p-10 text-white w-3/5 min-h-screen h-full overflow-y-auto">
+      <h2>Project</h2>
+      <p>This is detail.<br />
+        What I call important is cheese.</p>
+      <p><a href="/">Back</a></p>
     </div>
+    <a href="/"><div id="backsplash" class="fixed top-0 left-0 min-h-screen h-full w-2/5 overflow-auto"></div></a>
   </turbo-frame>
   <turbo-frame id="footer">
     <footer class="fixed bottom-0 ml-10 mb-2">
